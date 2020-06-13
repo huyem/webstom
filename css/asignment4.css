@@ -15,6 +15,7 @@ a{
 }
 img{
     max-width: 100%;
+    max-height: 300px;
 }
 .header,.main,footer{
     float: left;
@@ -22,7 +23,6 @@ img{
 }
 .header{
     background-color: white;
-    width:;
 }
 .container{
     width: 890px;
@@ -91,5 +91,16 @@ img{
     background-color: aquamarine;
     text-align: center;
     box-sizing: border-box;
+}
+
+
+.content2 span{
+    margin: 30px 35px;
+    width: 25%;
+    box-sizing: border-box;
+    background-color: #f2f2f2;
+    height: 300px;
+    float: left;
+
 }
 
