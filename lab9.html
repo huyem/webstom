@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lap9</title>
+    <link rel="stylesheet" href="css/lab9.css">
+
+</head>
+<body>
+<div class="button">
+   <div class="onc">
+       <button class="button-ocn" onclick="home()">Home</button>
+       <button class="button-ocn" onclick="profile()">Profile</button>
+       <button class="button-ocn" onclick="messages()">Messages</button>
+       <button class="button-ocn" onclick="setting()">Settings</button>
+   </div>
+<div id="home">This home content</div>
+<div id="profile">This Profile content</div>
+<div id="messages">This Messages content</div>
+<div id="setting">This Setting content</div>
+<script type="text/javascript">
+    function home() {
+        document.getElementById("home").style.display="block";
+        document.getElementById("setting").style.display="none";
+        document.getElementById("profile").style.display="none";
+        document.getElementById("messages").style.display="none";
+
+    }
+    function profile() {
+        document.getElementById("profile").style.display="block";
+        document.getElementById("setting").style.display="none";
+        document.getElementById("home").style.display="none";
+        document.getElementById("messages").style.display="none";
+    }
+    function messages() {
+       document.getElementById("messages").style.display="block";
+        document.getElementById("setting").style.display="none";
+        document.getElementById("home").style.display="none";
+        document.getElementById("profile").style.display="none";
+    }
+    function setting() {
+        document.getElementById("setting").style.display="block";
+        document.getElementById("home").style.display="none";
+        document.getElementById("profile").style.display="none";
+        document.getElementById("messages").style.display="none";
+
+
+    }
+</script>
+
+</div>
+</body>
+</html>
