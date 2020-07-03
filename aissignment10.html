@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>assignment10</title>
+    <link rel="stylesheet" href="css/assig10.css">
+
+</head>
+<body>
+
+    <div class="content_all" >
+
+        <div id="content_all" onclick="navTab()" style="float: left; display: inline-flex" >
+
+            <div >
+                <img class="tab_content"  src="img/hinh-nen-anime-cho-may-tinh-137-1.jpg" height="200" width="400"/>
+            </div>
+            <div  class="tab_content"><img src="img/hinh-nen-anime-cho-may-tinh-151 - Copy.jpg" height="200" width="400"/></div>
+            <div  class="tab_content"><img src="img/hinh-nen-anime-cho-may-tinh-128-1.jpg" height="200" width="400"/></div>
+            <div  class="tab_content"><img src="img/hinh-nen-anime-cho-may-tinh-24-1.jpg" height="200" width="400"/></div>
+            <div  class="tab_content"><img src="img/hinh-nen-anime-cho-may-tinh-35-1.jpg" height="200" width="400"/></div>
+        </div>
+    </div>
+<script>
+    var index=1;
+    navTab= function() {
+
+        document.getElementById("content_all").style.transform="translateX(-"+(index*400)+"px)";
+        index++;
+        if(index>4){
+            index=0;
+        }
+
+    }
+setInterval(navTab,1000);
+
+</script>
+</body>
+</html>
