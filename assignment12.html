@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment12</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="css/assig12.css">
+
+</head>
+<body>
+<div class="container">
+          <div class="col-md-9" style="padding: 0">
+              <div id="anh" onclick="change()"  style=" display: inline-flex; margin: 0;padding: 0" >
+                  <a href="#" target="_blank">
+                      <div> <img  src="img/assig12_1.png " height="345px" width="855px"></div>
+                  </a>
+                  <a href="#" target="_blank">
+                      <div><img src="img/images.jpg" height="345px" width="855px"/> </div>
+                  </a>
+                  <a href="#" target="_blank">
+                      <div><img src="img/images%20(1).jpg" height="345px" width="855px" /></div>
+                  </a>
+                  <a href="#" target="_blank">
+                      <div><img src="img/images%20(3).jpg" height="345px" width="855px" /></div>
+                  </a>
+
+
+
+              </div>
+          </div>
+          <div style="margin-top: 30px" >
+              <a href="#" target="_blank"><img class="col-md-3" src="img/assig12_.png" height="300px"></a>
+          </div>
+    <div >
+        <style type="text/css">
+            .incol{
+                background-image:url(img/assig12_2.png);
+            }
+        </style>
+        <div class="col-md-4">
+            <a href="#" target="_blank">
+                <div class="incol" >
+
+                <span>
+                    <p>NEW!</p>
+                    CSLVIN KLEIN MEN'S COLLESTION
+                 </span>
+
+                </div>
+            </a>
+        </div>
+        <div class="col-md-4">
+          <a href="#" target="_blank">
+              <div class="incol">
+               <span> <p >NEW!</p>
+            CSLVIN KLEIN WOMEN'S COLLESTION
+                </span>
+              </div>
+          </a>
+        </div>
+        <div class="col-md-4" >
+           <a href="#" target="_blank">
+               <div class="incol" style="background: #6b524b;padding-top: 20px ">
+                <span ><p> FREE SHIPPING </p>
+                    <p style="font-size: 15px">ONE ORDER OVER $500</p>
+                </span>
+               </div>
+           </a>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <a href="#" target="_blank"><p  style=" text-align: center;background-color:#6b524b;font-size: 20px;color: whitesmoke;margin-top: 30px" >NEW PRODUCT</p>
+        </a>
+    </div>
+
+
+</div>
+<script>
+    var index=1;
+    change = function() {
+
+        document.getElementById("anh").style.transform="translateX(-"+(index*855)+"px)";
+        index++;
+        if(index>3){
+            index=0;
+        }
+
+    }
+    setInterval(change,1000);
+
+</script>
+
+</body>
+</html>
