@@ -1,0 +1,38 @@
+body{
+  margin: 0px;
+}
+#mainContainer {
+    position: relative;
+  }
+
+  #content,
+  #adContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  #content{background-color: black;}
+  #contentElement {
+    overflow: hidden;
+  }
+
+  #playButton {
+   /*  margin-top:10px;
+    margin-left:10px; */
+    height: 60px;
+    padding: 15px;
+    font-size: 22px;
+    display: none;
+    position: absolute;
+  }
+
+  #closeButton {
+    /*  margin-top:10px;
+     margin-left:10px; */
+     font-size: 22px;
+     display: none;
+     position: absolute;
+     right: 0px;
+     bottom: 0px;
+   }
